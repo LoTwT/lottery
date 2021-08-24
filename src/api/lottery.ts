@@ -1,7 +1,7 @@
-import axios from "axios"
+import { RequestMethod } from "./base"
 
 const requestLotteryUrl = "/api/lottery"
 
-export const getLottery = async () => await axios.get(requestLotteryUrl)
+export const requestLottery = (method: RequestMethod, payload: any) => {
 
-export const postLottery = async () => await axios.post(requestLotteryUrl)
+}
